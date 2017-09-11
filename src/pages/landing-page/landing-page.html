@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1 *ngIf="textToShow">{{textToShow}}</h1>
+  <h3>Welcome to the Ionic test application!</h3>
+
+  <p>
+  By clicking on the button below you will be navigated to a new page with a textbox.
+  <br/> <br/>
+  if you add some text to it and then submit the form, the application will redirect you to
+   this page agian, with the text that you inserted to the textbox.
+  </p>
+  <p>
+    <button ion-button color="danger" [navPush]="textBoxPage" [navParams]="params">Click on me</button>
+  </p>
+
+</ion-content>

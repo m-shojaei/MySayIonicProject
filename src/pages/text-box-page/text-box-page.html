@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Hello Ionic</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content padding>
+  <form [formGroup]="form" (ngSubmit)="logForm()" padding>
+    <ion-item>
+      
+      <ion-label floating>type something</ion-label>
+      <ion-input type="text" formControlName="something"></ion-input>
+    </ion-item>
+    <div padding>
+        <button ion-button type="submit" [disabled]="!form.valid">Submit</button>
+    </div>
+  </form>
+</ion-content>

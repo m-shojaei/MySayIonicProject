@@ -33,3 +33,14 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+www/build/
+www/assets/
+platforms/
+plugins/
+*.swp
+.DS_Store
+Thumbs.db
+.idea/
+.sourcemaps/
+coverage/
+node_modules/

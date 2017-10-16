@@ -1,5 +1,7 @@
+sudo: required
+dist: trusty
 language: node_js
 
 before_script:
- - sudo npm install 
+ - npm install 
  - npm run test
